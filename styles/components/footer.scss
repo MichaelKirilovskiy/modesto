@@ -1,0 +1,103 @@
+.footer {
+    color: #ffffff;
+}
+.footer>.container {
+    max-width: 100%;
+    padding: 0 0;
+    position: relative;
+}
+.footer-fg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: rgba(49, 29, 94, 0.85);
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+
+}
+.footer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.footer-grid-item {
+    flex-basis: calc( 100% / 3 - 20px);
+}
+
+.phone, .address {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.address-image {
+    flex-shrink: 0;
+}
+.address-image, .phone-image {
+    padding-right: 16px;
+}
+
+.subscribe {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.footer fieldset {
+    padding: 0;
+    border: none;
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.button-subscribe {
+    padding: 0;
+    border-radius: 0;
+}
+.footer input {
+    border-radius: 0;
+}
+.footer-bar {
+    display: -webkit-flex;
+    /*display: -ms-flex;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-nav {
+    list-style: none;
+    display: -webkit-flex;
+    /*display: -ms-flex;*/
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-left: 0;
+    flex-basis: 30%;
+    justify-content: space-between;
+    text-align: center;
+}
+.footer .nav-li {
+    flex-basis: auto;
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+}

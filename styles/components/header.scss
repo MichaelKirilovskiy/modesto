@@ -1,0 +1,22 @@
+.header {
+    width: 100%;
+    display: -webkit-flex;
+    /*display: -ms-flex;*/
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 100;
+    background-color: #1d2126;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+.header>.container {
+    display: -webkit-flex;
+    /*display: -ms-flex;*/
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /*background-color: brown;*/
+
+}

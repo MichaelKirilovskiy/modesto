@@ -1,0 +1,60 @@
+.button {
+  font: inherit;
+  cursor: pointer;
+  display: inline-flex;
+  min-height: 1em;
+  outline: 0;
+  border: none;
+  background: #e0e1e2 none;
+  color: rgba(0, 0, 0, .6);
+  margin: 0;
+  padding: .78571429em 1.5em .78571429em;
+  text-transform: none;
+  text-shadow: none;
+  font-weight: 700;
+  line-height: 1em;
+  text-align: center;
+  text-decoration: none;
+  border-radius: .28571429rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.button:hover {
+  background-color: #cacbcd;
+  background-image: none;
+  color: rgba(0, 0, 0, .8);
+}
+
+.button:focus {
+  background-color: #cacbcd;
+  color: rgba(0, 0, 0, .8);
+}
+
+.button:disabled, .disabled.button, .disabled.button:hover {
+  cursor: default;
+  opacity: .45 !important;
+  background-image: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  pointer-events: none !important;
+}
+.button-primary {
+  padding: 15px 20px;
+  font-family: 'Hammersmith One', sans-serif;
+  background-color: transparent;
+  font-size: 16px;
+  border-radius: 2px;
+  color: var(--color-primary);
+  border: solid 1px var(--color-primary);
+}
+
+.button-primary:hover,
+.button-primary:focus {
+  color: #fff;
+  background-color: var(--color-primary);
+  border: solid 1px var(--color-primary);
+}

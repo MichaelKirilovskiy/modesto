@@ -1,0 +1,37 @@
+.contact>.container {
+    display: -webkit-flex;
+    /*display: -ms-flex;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+}
+.contact-form, .contact-clients {
+    flex-basis: calc( 100% / 2 - 50px);
+    text-align: left;
+}
+form label {
+    display: none;
+}
+.contact fieldset {
+    padding: 0;
+    border: none;
+}
+.contact input, .contact textarea {
+    width: 100%;
+}
+.contact-clients-logos {
+    display: -webkit-flex;
+    /*display: -ms-flex;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 100%;
+}
+.client-logo {
+    flex-basis: calc( 100% / 2 - 20px);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

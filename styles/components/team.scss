@@ -1,0 +1,14 @@
+.team {
+    background-image: url("../../images/team/overlay_team.png");
+    background-size: cover;
+    color: white;
+}
+
+.grid-item-team {
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: calc( 100% / 4 - 15px);
+}
+.team .stripe {
+    background-color: white;
+}

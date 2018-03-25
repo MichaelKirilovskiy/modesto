@@ -1,0 +1,28 @@
+.review {
+    background-image: url("../../images/review/overlay_review.png");
+    background-size: cover;
+    color: white;
+    padding-top: 70px;
+    flex-wrap: wrap;
+}
+.review-head {
+    font-size: 100px;
+    font-family: 'Playfair Display', serif;
+}
+.pagination {
+    flex-basis: 100%;
+    margin-top: 45px;
+}
+.pagination .container {
+    display: -webkit-flex;
+    /*display: -ms-flex;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+}
+.avatar-team, .avatar-team-isActiv {
+    flex-basis: calc( 100% / 7 - 70px );
+
+
+}

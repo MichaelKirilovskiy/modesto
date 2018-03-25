@@ -1,0 +1,23 @@
+.story>.container {
+    width: 100%;
+    display: -webkit-flex;
+    /*display: -ms-flex;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.logo-story, .card-story {
+    flex-basis: 50%;
+}
+.card-story {
+    text-align: left;
+}
+.card-story>.card>.card-title>h2 {
+    margin-top: 0;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}

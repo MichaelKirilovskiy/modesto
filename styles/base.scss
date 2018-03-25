@@ -1,0 +1,32 @@
+
+
+html {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+:root {
+  --color-primary: #23b7a4;
+}
+
+
+a {
+  color: var(--color-primary);
+}
+
+
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  overflow: hidden;
+  /*position: relative;*/
+  width: 100%;
+}
+
