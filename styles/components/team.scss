@@ -1,14 +1,59 @@
 .team {
-    background-image: url("../../images/team/overlay_team.png");
-    background-size: cover;
-    color: white;
-}
 
+}
+.team .grid {
+    justify-content: space-between;
+}
 .grid-item-team {
     padding-left: 15px;
     padding-right: 15px;
-    flex-basis: calc( 100% / 4 - 15px);
+    flex-basis: calc( 100% / 4);
+
 }
-.team .stripe {
-    background-color: white;
+.grid-item-team .card {
+
+}
+.team .card .card-image {
+    position: relative;
+}
+
+.team .card-description {
+    background-color: #e1e6ea;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 17px;
+}
+.card-title {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    text-align: left;
+    color: #292f36;
+}
+.card-subtitle {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    text-align: left;
+    color: #8d8f92;
+}
+
+.card-hover-social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.card-hover-social-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #3a454d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1px;
+    margin-left: 1px;
+
 }

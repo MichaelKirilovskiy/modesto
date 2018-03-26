@@ -45,16 +45,18 @@
 .button-primary {
   padding: 15px 20px;
   font-family: 'Hammersmith One', sans-serif;
+  font-weight: normal;
   background-color: transparent;
-  font-size: 16px;
+  font-size: 14px;
   border-radius: 2px;
-  color: var(--color-primary);
-  border: solid 1px var(--color-primary);
+  color: #fff;
+  border: solid 2px #fff;
 }
 
 .button-primary:hover,
 .button-primary:focus {
-  color: #fff;
+
   background-color: var(--color-primary);
-  border: solid 1px var(--color-primary);
+  border: solid 2px var(--color-primary);
+  color: #fff;
 }

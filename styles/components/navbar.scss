@@ -39,15 +39,33 @@
 
 .nav-li {
     /*flex-basis: calc(100% / 7);*/
-    /*border: 1px solid red;*/
+    border: 2px solid transparent;
+    border-radius: 2px;
     flex-basis: auto;
     text-align: center;
+    padding: 8px 10px;
 }
 .navbar a {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: bold;
-    color: white;
+    color: #a4aead;
 
+}
+
+.navbar-nav>.isActive {
+    border-color: var(--color-primary);
+}
+.navbar-nav>.isActive>a {
+    color: var(--color-primary);
+}
+
+.nav-li:hover {
+    /*flex-basis: calc(100% / 7);*/
+    border: 2px solid #a4aead;
+    border-radius: 2px;
+    flex-basis: auto;
+    text-align: center;
+    padding: 8px 10px;
 }
