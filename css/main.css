@@ -1,3 +1,4 @@
+/*font-family: 'Vollkorn', serif;*/
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -301,16 +302,18 @@ template {
 [hidden] {
   display: none; }
 
+/*font-family: 'Vollkorn', serif;*/
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Open Sans", sans-serif; }
 
 :root {
   --color-primary: #23b7a4; }
 
 a {
-  color: var(--color-primary); }
+  color: var(--color-primary);
+  line-height: 1; }
 
 *, *::before, *::after {
   -webkit-box-sizing: inherit;
@@ -318,26 +321,30 @@ a {
 
 img {
   max-width: 100%;
-  height: auto; }
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover; }
 
 .wrapper {
   overflow: hidden;
   /*position: relative;*/
   width: 100%; }
 
+/*font-family: 'Vollkorn', serif;*/
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 1.57;
   color: rgba(65, 61, 75, 0.75); }
 
 .button {
-  font-family: 'Hammersmith One', sans-serif; }
+  font-family: "Quattrocento Sans", sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Quattrocento Sans", sans-serif; }
 
+/*font-family: 'Vollkorn', serif;*/
 .container {
   max-width: 1140px;
   padding-left: 15px;
@@ -565,6 +572,9 @@ input[type="text"], input[type="email"], textarea {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center; }
 
 .nav-li {
@@ -574,11 +584,11 @@ input[type="text"], input[type="email"], textarea {
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
   text-align: center;
-  padding: 8px 10px; }
+  padding: 2px 11px; }
 
 .navbar a {
   text-decoration: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Quattrocento Sans', sans-serif;
   font-size: 14px;
   font-weight: bold;
   color: #a4aead; }
@@ -596,7 +606,7 @@ input[type="text"], input[type="email"], textarea {
   -ms-flex-preferred-size: auto;
   flex-basis: auto;
   text-align: center;
-  padding: 8px 10px; }
+  padding: 2px 11px; }
 
 .child-width-1-1 > * {
   width: 100%; }
@@ -648,9 +658,9 @@ input[type="text"], input[type="email"], textarea {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-left: -15px;
   margin-right: -15px; }
 
@@ -930,7 +940,10 @@ section.story {
   padding-left: 15px;
   padding-right: 15px;
   -ms-flex-preferred-size: calc( 100% / 4);
-  flex-basis: calc( 100% / 4); }
+  flex-basis: calc( 100% / 4);
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1; }
 
 .team .card .card-image {
   position: relative; }
@@ -983,16 +996,86 @@ section.story {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-right: 1px;
-  margin-left: 1px; }
+  margin: 1px; }
 
+.card-hover {
+  opacity: 0; }
+
+.team .card {
+  cursor: pointer; }
+  .team .card:hover .card-hover {
+    opacity: 1; }
+    .team .card:hover .card-hover-social-icon:hover {
+      opacity: 0.5; }
+    .team .card:hover .card-hover-social-icon:hover img {
+      opacity: 0.5; }
+  .team .card:hover .card-description > * {
+    color: #ffffff; }
+  .team .card:hover .card-description {
+    background-color: #3a454d; }
+
+/*font-family: 'Vollkorn', serif;*/
 .works {
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  background-color: #3a454d; }
+  .works .heading {
+    color: #ffffff; }
+  .works .grid-item {
+    -ms-flex-preferred-size: calc( 100% / 3 - 20px);
+    flex-basis: calc( 100% / 3 - 20px);
+    padding-bottom: 30px; }
 
-.works > .container {
-  -ms-flex-preferred-size: 100%;
-  flex-basis: 100%; }
+.card-works {
+  position: relative;
+  line-height: 0; }
+  .card-works-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    /*line-height: 0;*/
+    background: rgba(116, 102, 16, 0.33);
+    display: -webkit-flex;
+    /*display: -ms-flex;*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    opacity: 0; }
+    .card-works-hover h1 {
+      color: #ffffff;
+      font-size: 50px; }
+    .card-works-hover .overlay {
+      display: -webkit-flex;
+      /*display: -ms-flex;*/
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    .card-works-hover .card-title-works {
+      -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+      height: 60px;
+      background-color: #1d2126;
+      text-align: left;
+      color: #ffffff;
+      padding: 25px 20px; }
+  .card-works:hover .card-works-hover {
+    opacity: 1; }
 
 .works-heading {
   display: -webkit-flex;
@@ -1047,13 +1130,7 @@ section.story {
   flex-basis: calc( 100% / 6); }
 
 .works .button {
-  margin-top: 70px; }
-
-.arrow-prev {
-  padding-right: 30px; }
-
-.arrow-next {
-  padding-left: 30px; }
+  /*margin-top: 70px;*/ }
 
 .review {
   background-image: url("../../images/review/overlay_review.png");
@@ -1309,6 +1386,9 @@ form label {
   flex-basis: calc( 60% - 15px);
   text-align: left; }
 
+.about-description > p {
+  margin-top: 0; }
+
 .about-cards {
   -ms-flex-preferred-size: calc( 40% - 15px);
   flex-basis: calc( 40% - 15px); }
@@ -1329,7 +1409,8 @@ form label {
 .about-card-title {
   color: #292f36;
   font-size: 18px;
-  font-weight: bold; }
+  font-weight: bold;
+  line-height: 1; }
 
 .about-card-icon {
   width: 50px;

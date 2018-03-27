@@ -8,6 +8,7 @@
     padding-left: 15px;
     padding-right: 15px;
     flex-basis: calc( 100% / 4);
+    flex-grow: 1;
 
 }
 .grid-item-team .card {
@@ -53,7 +54,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 1px;
-    margin-left: 1px;
+    margin: 1px;
+}
+.card-hover {
+    opacity: 0;
+}
 
+.team .card {
+    cursor: pointer;
+    &:hover .card-hover {
+        opacity: 1;
+        &-social-icon:hover {
+            opacity: 0.5;
+        }
+        &-social-icon:hover img {
+            opacity: 0.5;
+        }
+    }
+    &:hover .card-description>* {
+        color: #ffffff;
+    }
+    &:hover .card-description {
+        background-color: #3a454d;
+    }
 }

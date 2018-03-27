@@ -1,6 +1,7 @@
+@import "variables/_variables";
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: $base-f-f;
     font-size: 14px;
     font-weight: 300;
     line-height: 1.57;
@@ -8,9 +9,9 @@ body {
 }
 
 .button {
-    font-family: 'Hammersmith One', sans-serif;
+    font-family: $head-f-f;
 }
 
 h1,h2,h3,h4,h5, h6 {
-    font-family: 'Roboto', sans-serif;
+    font-family: $head-f-f;
 }

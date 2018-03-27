@@ -16,6 +16,10 @@
   text-align: left;
 }
 
+.about-description>p {
+  margin-top: 0;
+}
+
 .about-cards {
   flex-basis: calc( 40% - 15px);
 }
@@ -30,6 +34,7 @@
   color: #292f36;
   font-size: 18px;
   font-weight: bold;
+  line-height: 1;
 }
 
 .about-card-icon {
@@ -45,6 +50,7 @@
 .about-card-container {
   flex-basis: 85%;
   text-align: left;
+
 }
 
 .about-social {

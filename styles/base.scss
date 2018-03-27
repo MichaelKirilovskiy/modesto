@@ -1,8 +1,9 @@
-
+@import "variables/_variables";
 
 html {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: $base-f-f;
+
 }
 :root {
   --color-primary: #23b7a4;
@@ -11,6 +12,7 @@ html {
 
 a {
   color: var(--color-primary);
+  line-height: 1;
 }
 
 
@@ -22,6 +24,7 @@ a {
 img {
   max-width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 .wrapper {

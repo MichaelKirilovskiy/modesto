@@ -34,6 +34,7 @@
     list-style: none;
     width: 60%;
     justify-content: space-between;
+    align-items: center;
     text-align: center;
 }
 
@@ -43,11 +44,11 @@
     border-radius: 2px;
     flex-basis: auto;
     text-align: center;
-    padding: 8px 10px;
+    padding: 2px 11px;
 }
 .navbar a {
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Quattrocento Sans', sans-serif;
     font-size: 14px;
     font-weight: bold;
     color: #a4aead;
@@ -67,5 +68,5 @@
     border-radius: 2px;
     flex-basis: auto;
     text-align: center;
-    padding: 8px 10px;
+    padding: 2px 11px;
 }
